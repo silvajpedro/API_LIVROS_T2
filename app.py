@@ -6,11 +6,12 @@ import sqlite3
 # - request: para acessar os dados que o usuário envia para a API
 # - jsonify: para devolver os dados em formato JSON (estrutura de texto compreensível por máquinas)
 from flask import Flask, request, jsonify  
+from flask_cors import CORS
 
 # Criamos a aplicação Flask.
 # O parâmetro "__name__" informa que este é o arquivo principal da aplicação.
 app = Flask(__name__)
-
+CORS(app)
 # 🔹 Criamos uma rota que responde ao endereço "/femandaopix"
 # Quando alguém acessar http://127.0.0.1:5000/femandaopix no navegador, a função abaixo será executada
 @app.route("/femandaopix")

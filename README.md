@@ -72,4 +72,4 @@ O endpoint /livros retorna todos os livros cadastrados na API.
 
 ---
 
-![alt text](image.png)
+![Imagem do projeto de doação de livros nas cores azul e branco](image.png)
